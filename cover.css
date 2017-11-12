@@ -159,6 +159,14 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.6);
 }
 
+.pointer {
+    cursor: pointer;
+}
+
+.mask1 {
+    background-image: url(./image/mask1.png);
+}
+
 
 /*
  * Header
@@ -299,12 +307,4 @@ body {
     .mastfoot .visible {
         display: block;
     }
-}
-
-.pointer {
-    cursor: pointer;
-}
-
-.mask1 {
-    background-image: url(https://i.imgur.com/04RSCtG.png);
 }
