@@ -166,6 +166,7 @@ body {
 
 .masthead {
     margin-bottom: 2rem;
+    z-index: 10;
 }
 
 .masthead-brand {
@@ -298,4 +299,12 @@ body {
     .mastfoot .visible {
         display: block;
     }
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.mask1 {
+    background-image: url(./image/mask1.png);
 }
