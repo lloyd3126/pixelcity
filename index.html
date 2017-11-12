@@ -26,19 +26,19 @@
                 <header class="masthead clearfix">
                     <div class="inner">
                         <nav class="nav nav-masthead">
-                            <a class="nav-link active borderNew" href="#">
+                            <a id="btn_About" class="nav-link active borderNew pointer">
                                 <p class="my-0 text-left letter-spacing-2">展覽理念</p>
                                 <p class="my-0 text-left ">About</p>
                             </a>
-                            <a class="nav-link ml-2 ml-sm-3" href="#">
+                            <a id="btn_INFO" class="nav-link ml-2 ml-sm-3 pointer">
                                 <p class="my-0 text-left letter-spacing-2">展場資訊</p>
                                 <p class="my-0 text-left ">INFO</p>
                             </a>
-                            <a class="nav-link ml-2 ml-sm-3" href="#">
+                            <a id="btn_Project" class="nav-link ml-2 ml-sm-3 pointer">
                                 <p class="my-0 text-left letter-spacing-2">展覽內容</p>
                                 <p class="my-0 text-left ">Project</p>
                             </a>
-                            <a class="nav-link ml-2 ml-sm-3" href="#">
+                            <a id="btn_Contact" class="nav-link ml-2 ml-sm-3 pointer">
                                 <p class="my-0 text-left letter-spacing-2">聯絡資料</p>
                                 <p class="my-0 text-left ">Contact</p>
                             </a>
@@ -53,7 +53,7 @@
 
             <section class="spaceBox"></section>
 
-            <section class="my-5 section d-flex flex-column justify-content-center mask1">
+            <section id="About" class="my-5 section d-flex flex-column justify-content-center mask1">
                 <div data-bottom="margin-top: 400px;" data-center="margin-top: 0px;" class="mb-5">
                     <img style="width: 30%; height: auto;" src="./image/title.png" alt="">
                 </div>
@@ -77,7 +77,7 @@
 
             <section class="spaceBox"></section>
 
-            <section class="my-5 container section d-flex justify-content-center">
+            <section id="INFO" class="my-5 container section d-flex justify-content-center">
                 <div class=" col-5 d-flex flex-column justify-content-center " style="padding: 0; ">
                     <div data-center-top="margin-right:80px; opacity: 0;" data-center="margin-right:0px;opacity: 1;" class=" d-flex " style="height: 40%; ">
                         <div class="col-6 d-flex flex-column justify-content-end text-left ">
@@ -117,7 +117,7 @@
 
             <!-- <section class="spaceBox "></section> -->
 
-            <section class="my-5 container section d-flex justify-content-center ">
+            <section id="Project" class="my-5 container section d-flex justify-content-center ">
                 <div class="col-2 d-flex flex-column justify-content-center " style="padding: 0; ">
                     <div data-center="margin-top: 0px; " data-bottom-top="visibility: hidden; " data-100-bottom="visibility: visible;opacity: 0; " data-bottom="opacity: 1; margin-top: -200px; " class="yBorder yWord d-flex justify-content-center align-items-center
                     " style="height: 180px; width: 180px; ">
@@ -156,7 +156,7 @@
 
         </div>
 
-        <section class="section endBox d-flex justify-content-center align-items-center mask1 ">
+        <section id="Contact" class="section endBox d-flex justify-content-center align-items-center mask1 ">
             <div class="d-flex flex-column ">
                 <div data-bottom="margin-top: 400px; " data-center="margin-top: 0px; " class="01 d-flex mb-2 " style="color: rgba(0, 0, 0, 0.6); text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0); ">
                     <div class="circle mr-3 d-flex justify-content-center align-items-center ">
@@ -187,20 +187,60 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js "></script>
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
+
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js " integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh " crossorigin="anonymous "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js " integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ " crossorigin="anonymous "></script>
-    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js "></script>
 
     <script>
+        // window.jQuery || document.write('<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js "><\/script>')
+        $(function() {
+            $('nav a').hover(function() {
+                $(this).css("color", "#FFDE97");
+            }, function() {
+                $(this).css("color", "#fff");
+            });
+
+            $('#btn_About').click(function() {
+                $("nav a").css("border-bottom", ".15rem solid rgba(255, 222, 151, 0)");
+                $('html,body').animate({
+                    scrollTop: $('#About').offset().top
+                }, 800);
+                $(this).css("border-bottom-color", "#FFDE97");
+                $(this).css("border-bottom", ".15rem solid #FFDE97");
+            });
+            $('#btn_INFO').click(function() {
+                $("nav a").css("border-bottom", ".15rem solid rgba(255, 222, 151, 0)");
+                $('html,body').animate({
+                    scrollTop: $('#INFO').offset().top
+                }, 800);
+                $(this).css("border-bottom", ".15rem solid #FFDE97");
+            });
+            $('#btn_Project').click(function() {
+                $("nav a").css("border-bottom", ".15rem solid rgba(255, 222, 151, 0)");
+                $('html,body').animate({
+                    scrollTop: $('#Project').offset().top
+                }, 800);
+                $(this).css("border-bottom", ".15rem solid #FFDE97");
+            });
+            $('#btn_Contact').click(function() {
+                $("nav a").css("border-bottom", ".15rem solid rgba(255, 222, 151, 0)");
+                $('html,body').animate({
+                    scrollTop: $('#Contact').offset().top
+                }, 800);
+                $(this).css("border-bottom", ".15rem solid #FFDE97");
+            });
+        });
+
         var s = skrollr.init();
-        window.jQuery || document.write('<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js "><\/script>')
     </script>
+
+
 </body>
 
 </html>
-
-
-<!-- <span><i class="fa fa-facebook " aria-hidden="true "></i></span> -->
