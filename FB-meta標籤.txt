@@ -1,5 +1,5 @@
-<meta property="og:url"                content="https://lloyd3126.github.io/pixelcity/" />
-<meta property="og:type"               content="business.business" />
-<meta property="og:title"              content="國立嘉義大學數位系107級畢業展 - 數碼城 Pixel City" />
-<meta property="og:description"        content="「這是一座獨數Eager的城市。」有著數教代般的大眾，以及顛倒城般神秘。下一步就要踏進數碼城的各位，你們就像自變數，代入自己的方程式，產生蝴蝶效應，將數位趨勢帶給大家，並讓我們告訴你：「這樣做，到底數位了什麼？」" />
-<meta property="og:image"              content="https://i.imgur.com/qmDS4eg.jpg" />
+<meta property="og:url" content="https://lloyd3126.github.io/pixelcity/" />
+<meta property="og:type" content="business.business" />
+<meta property="og:title" content="數碼城 Pixel City - 107級國立嘉義大學數位系畢業展" />
+<meta property="og:description" content="「這是一座獨數Eager的城市。」有著數教代般的大眾，以及顛倒城般神秘。下一步就要踏進數碼城的各位，你們就像自變數，代入自己的方程式，產生蝴蝶效應，將數位趨勢帶給大家，並讓我們告訴你：「這樣做，到底數位了什麼？」" />
+<meta property="og:image" content="https://i.imgur.com/qmDS4eg.jpg" />
