@@ -167,6 +167,30 @@ body {
     background-image: url(./image/mask1.png);
 }
 
+.none {
+    display: none;
+}
+
+.my-gallery {
+    width: 100%;
+    height: 633px;
+}
+
+.my-gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.my-gallery figure {
+    margin: 0 5px 5px 0;
+    width: 19%;
+    height: auto;
+}
+
+.my-gallery figcaption {
+    display: none;
+}
+
 
 /*
  * Header
