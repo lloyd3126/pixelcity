@@ -205,6 +205,10 @@ body {
     height: 300px;
 }
 
+.grayBoxRWD {
+    height: 30%;
+}
+
 
 /*
  * Header
@@ -367,6 +371,10 @@ body {
     }
     .rwdNone {
         display: none;
+    }
+    .my-gallery figure {
+        width: 20%;
+        margin: 5px;
     }
 }
 
