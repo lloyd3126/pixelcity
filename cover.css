@@ -191,6 +191,20 @@ body {
     display: none;
 }
 
+.text03 {
+    color: rgba(0, 0, 0, 0.6);
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0);
+}
+
+.titleImg2 {
+    width: 100%;
+    height: auto;
+}
+
+.grayBox {
+    height: 300px;
+}
+
 
 /*
  * Header
@@ -333,3 +347,54 @@ body {
         display: block;
     }
 }
+
+@media screen and (max-width: 768px) {
+    /* 如果使用者視窗寬度 <= 768px，將字體大小變為 20px */
+    .titleImg {
+        width: 80%;
+    }
+    .section1 {
+        height: 80vh;
+    }
+    .spaceBox {
+        display: none;
+    }
+    .timeImg {
+        width: 15vw;
+    }
+    .RWD1 {
+        display: inline-block;
+    }
+    .rwdNone {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 638px) {
+    /* 如果使用者視窗寬度 <= 768px，將字體大小變為 20px */
+    .titleImg {
+        width: 80%;
+    }
+    .section1 {
+        height: 100vh;
+        margin-top: -20vh;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /* 如果使用者視窗寬度 <= 768px，將字體大小變為 20px */
+    h4 {
+        font-size: 16px;
+    }
+    h5 {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
