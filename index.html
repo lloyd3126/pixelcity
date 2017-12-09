@@ -893,9 +893,17 @@
             });
         });
 
-        var s = skrollr.init({
-            // skrollrBody = 'skrollr-body'
-        });
+        // var s = skrollr.init({
+        //     // skrollrBody = 'skrollr-body'
+        // });
+        skrollr.init({
+                forceHeight: false,
+                easing: {
+                    vibrate: function (p) {
+                        return Math.sin(p * 10 * Math.PI);
+                    }
+                }
+            });
 
 
 
