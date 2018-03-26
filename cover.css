@@ -224,6 +224,20 @@ body {
     border: 1px solid #FFDE97;
 }
 
+.btn {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.6);
+}
+.btn:focus,
+.btn:hover {
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#Contact a {
+    text-decoration: none;
+}
+
 
 /*
  * Header
